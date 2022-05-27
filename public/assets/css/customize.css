@@ -1,0 +1,69 @@
+.news-img-div {
+    position: relative;
+}
+
+.news-img-div .delete-img {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 2;
+}
+.news-img-div .copy-img {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    z-index: 2;
+
+}
+
+.news-img-div:hover .copy-img, .news-img-div:hover .delete-img {
+    display: block;
+}
+
+.news-img-div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.news-img-div:hover img {
+    opacity: 0.3;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+
+.raw-key {
+    font-style: italic;
+    color: #044d81 !important;
+}
+
+.dir-ltr {
+    direction: ltr !important;
+}
+
+.contract-text {
+    border: 1px solid #0061a5;
+    border-radius: 5px;
+}
+
+.info-profile {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #044d81;
+}
+.update-news-images:before {
+    float: right;
+    /*background-color: #f83131;*/
+    padding: 5px;
+    color: white !important;
+    border-radius: 3px;
+    /*display: none;*/
+}
+.update-news-images {}

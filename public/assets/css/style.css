@@ -1,0 +1,202 @@
+/* ALL RIGHTS RESERVED BY THE_MARZI  */
+
+/*COLORS*/
+:root {
+    --menu-background-color : white;
+    --body-background-color : #ebeff2;
+    --navbar-background-color : #ebeff2;
+    --footer-background-color : #e3e9ed;
+    --menu-item-hover-background: #ced4d4;
+    --content-background-color: white;
+    --content-shadow-color: white;
+    --menu-text-color: #323232;
+    --menu-text-color-hover: #66cbf8;
+    --footer-text-color: #98a6ad;
+    --content-text-color: #2f2f2f;
+    --menu-scrollbar-color: #a4bab7;
+    --content-scrollbar-color: #a7a7a7;
+    --profile-border-color: #3c6677;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'Shabnam';
+    src: url("../font/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-FD.woff2") format('woff2'),
+    url("../font/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-FD.woff") format('woff'),
+    url("../font/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-FD.eot") format('eot'),
+    url("../font/shabnam-font-v2.4.0/Farsi-Digits/Shabnam-FD.ttf") format('truetype')
+;
+    font-weight: normal;
+    font-style: normal;
+}
+*, body, h1, h2, h3, h4, h5, h6, div, p, ul, li, td, tr, th, span, button, a {
+    font-family: 'Shabnam' , sans-serif;
+}
+
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     height: 100vh;
+     background-color: var(--body-background-color);
+ }
+
+ .dir-rtl {
+     direction: rtl !important;
+ }
+
+.dir-ltr {
+    direction: ltr !important;
+}
+
+/*NAVBAR*/
+.navbar-bg {
+    background-color: var(--navbar-background-color);
+    color: var(--menu-text-color);
+}
+
+.navbar-bg a:hover, .navbar-bg button:hover {
+    color: var(--menu-text-color-hover);
+}
+
+.navbar-profile-img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--profile-border-color);
+    object-fit: cover;
+}
+
+.navbar-profile-btn {
+    background-color: transparent;
+    border: 0;
+    color: var(--menu-text-color);
+}
+
+.dropdown-profile-img {
+    width: 80px;
+    height: 80px;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.nav-dropdown-id {
+    color: #5d5c5c;
+    font-size: 0.75em;
+}
+
+.nav-drop-ul li {
+    font-size: 0.85em;
+    cursor: pointer;
+}
+
+.logout-btn img {
+    width: 30px;
+}
+
+.logout-btn {
+    background-color: transparent;
+    border: 0;
+}
+
+.bg-body {
+    background-color: var(--navbar-background-color);
+}
+
+.offcanvas-toggler {
+    border: 0;
+    color: var(--menu-text-color);
+    font-size: 1.5em;
+}
+
+/*SIDE MENU*/
+.side-menu-container {
+    height: 100vh;
+    background-color: var(--menu-background-color);
+}
+
+.sidebar-logo img {
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    /*float: right;*/
+}
+
+.side-menu {
+    overflow-y: auto;
+}
+
+.side-menu li,  .side-menu li a{
+    color: var(--menu-text-color) !important;
+    font-size: 1em !important;
+}
+
+.side-menu li a:hover, .side-menu li .active-menu {
+    /*background-color: var(--menu-item-hover-background);*/
+    color: var(--menu-text-color-hover) !important;
+    text-decoration: none;
+}
+
+.side-menu .uk-accordion-title:before {
+    color: var(--menu-text-color) !important;
+}
+
+.side-menu::-webkit-scrollbar {
+    width: 10px;
+}
+.side-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+.side-menu::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+.side-menu:hover::-webkit-scrollbar-thumb {
+    background: var(--menu-scrollbar-color);
+}
+
+/*CONTENT*/
+.content{
+    width: 100%;
+    /*box-shadow: inset 0 0 20px 6px var(--content-shadow-color);*/
+    /*min-height: 80vh;*/
+    overflow-y: auto;
+}
+
+.content-child {
+    background-color: var(--content-background-color);
+    border-radius: 6px 6px 0 0 ;
+    width: 96%;
+    /*min-height: 80vh;*/
+
+    direction: rtl;
+    text-align: right;
+}
+
+.content div, .content a, .content p, .content table, .content td, .content span, .content li {
+    color: var(--content-text-color);
+}
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+}
+.content:hover::-webkit-scrollbar-thumb {
+    background: var(--content-scrollbar-color);
+}
+
+/*FOOTER*/
+.footer-rights {
+    color: var(--footer-text-color) !important;
+}
+.footer-bg {
+    background-color: var(--footer-background-color);
+}

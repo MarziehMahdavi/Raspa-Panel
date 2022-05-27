@@ -1,0 +1,15 @@
+.logo-img {
+    width: 60px !important;
+    height: fit-content;
+    margin-right: unset !important;
+    margin-left: unset !important;;
+}
+.logo-title {
+    text-align: right;
+    color: black !important;
+}
+.logo-description {
+    text-align: right;
+    color: #e35640;
+    font-size: 0.9rem;
+}
