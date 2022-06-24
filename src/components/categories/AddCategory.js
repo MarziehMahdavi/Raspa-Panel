@@ -37,4 +37,6 @@ export default function AddCategory() {
             </div>
         </div>
     )
+
+
 }
