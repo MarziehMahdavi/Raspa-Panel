@@ -59,9 +59,7 @@ export default function AddRecipe() {
             "cookTime": parseInt($("#cook_time_input").val()),
             "servings": parseInt($("#servings_input").val()),
             "source": "string",
-            "image": [
-                $("#image_input").val()
-            ],
+            "image": $("#image_input").val(),
             "directions": direction,
             "ingredientCommands": ingredient_array,
             "difficulty": $("#difficulty_input").val(),
@@ -72,7 +70,7 @@ export default function AddRecipe() {
         console.log(data)
         let config = {
             method: 'post',
-            url: generateURL("/ingredients/save"),
+            url: generateURL("/recipes/new"),
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -204,7 +202,7 @@ export default function AddRecipe() {
                         <option value={"HARD"}>سخت</option>
                     </select>
                 </div>
-                <div className={"col-12 col-xl-6"}>
+                <div className={"col-12 col-xl-6 mt-4"}>
                     <label>دسته‌بندی غذا:</label>
                     <select id={"category_input"} className={'form-control'}>
                         {
@@ -214,14 +212,14 @@ export default function AddRecipe() {
                         }
                     </select>
                 </div>
-                <div className={"col-12"}>
+                <div className={"col-12 mt-4"}>
                     <label>عکس غذا:</label>
                     <input  id={"image_input"} type={"text"} className={'form-control'}/>
                     {/*<button className={Style.uploadBtn + " btn"} onClick={() => {$("#image_input").click()}}>آپلود عکس</button>*/}
                     {/*{ file && <img className={"w-100 rounded"} src={file}/>}*/}
 
                 </div>
-                <div className={"col-12"}>
+                <div className={"col-12 mt-5"}>
                     <label>مواد اولیه:</label>
                     <div className="table-responsive mt-3">
                         <table className={"table text-right "}>
