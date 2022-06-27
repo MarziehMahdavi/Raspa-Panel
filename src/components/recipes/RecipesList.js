@@ -93,8 +93,8 @@ export default function RecipesList() {
                         recipes.map((item, index) => (
                             <tr>
                                 <td>{item.description}</td>
-                                {/*<td>{findCategoryById(item.categories[0])}</td>*/}
-                                <td></td>
+                                <td>{findCategoryById(item.categories[0])}</td>
+                                {/*<td></td>*/}
                                 <td><Link className={'btn btn-outline-info text-info'} to={{
                                     pathname: '/sentRecipes/show',
                                     search: "id=" + item.id
